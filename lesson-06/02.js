@@ -25,16 +25,12 @@ console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 */
 
 const age = (element, index) => {
-    if (element > 15) {
-        return index
-    }
+    return element * 2
 }
 const map = (array, callback) => {
     const newArray = []
     for (let i = 0; i < array.length; i++) {
-       if (callback(array[i],i)){
-           newArray.push(array[i])
-       }
+        newArray.push(callback(array[i], i))
     }
     return newArray
 }
