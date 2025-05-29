@@ -20,7 +20,6 @@ const oddNumbers = filter(numbers, (element, index) => {
 });
 console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 */
-
 const name = (element) => {
     return element.length > 5
 }
@@ -33,7 +32,6 @@ const filter = (array,callback) => {
     }
     return newArray
 }
-
 const friend = ["Kate",'Anna','Marina']
 console.log(filter(friend,name))
 
