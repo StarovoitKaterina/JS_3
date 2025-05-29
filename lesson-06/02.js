@@ -24,4 +24,19 @@ const doubledNumbers = map(numbers, (element, index) => {
 console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 */
 
-const map = () => {}
+const age = (element, index) => {
+    if (element > 15) {
+        return index
+    }
+}
+const map = (array, callback) => {
+    const newArray = []
+    for (let i = 0; i < array.length; i++) {
+       if (callback(array[i],i)){
+           newArray.push(array[i])
+       }
+    }
+    return newArray
+}
+ const num = [1,5,20,50]
+console.log(map(num,age))
